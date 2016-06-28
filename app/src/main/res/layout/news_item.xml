@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/news_item_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/default_half_dimen"
+    android:layout_marginTop="@dimen/default_half_dimen"
+    android:background="#fff">
+
+    <android.support.constraint.LinearConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_2x_dimen">
+
+        <TextView
+            android:id="@+id/news_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2"
+            android:textColor="#222"
+            android:textSize="24sp"
+            tools:text="title one"/>
+
+        <TextView
+            android:id="@+id/news_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingMultiplier="1.15"
+            android:maxLines="3"
+            android:paddingTop="@dimen/default_dimen"
+            android:textColor="#333"
+            android:textSize="16sp"
+
+            tools:text="some really long text for the news so that it goes on to next line atleast."/>
+    </android.support.constraint.LinearConstraintLayout>
+</android.support.v7.widget.CardView>

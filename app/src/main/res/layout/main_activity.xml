@@ -7,12 +7,9 @@
     android:layout_height="match_parent"
     tools:context="com.bb.newspro.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="247dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_news_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </android.support.constraint.ConstraintLayout>
