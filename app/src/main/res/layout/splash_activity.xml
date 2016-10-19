@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/splash_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bb.newspro.ui.SplashActivity">
+
+    <TextView
+        android:id="@+id/splash_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/app_name"
+        android:fontFamily="sans-serif"
+        android:textSize="56sp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_guide"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guide"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guide"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="By - Company Name Here"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintCenterY_toCenterY="@+id/vertical_guide"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guide"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guide"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_guide"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guide"
+        android:layout_width="391dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:relativePercent="50"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="262dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:relativePercent="50"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+</android.support.constraint.ConstraintLayout>

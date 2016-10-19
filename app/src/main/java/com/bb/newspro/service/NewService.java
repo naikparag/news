@@ -25,7 +25,7 @@ public class NewService {
                 "\n" +
                 "For this latest study, lead researcher Liana C. Del Gobbo, Ph.D., of the Division of Cardiovascular Medicine at Stanford University School of Medicine in California, and colleagues set out to gain a better understanding of how omega-3s affect heart health.\n" +
                 "\n" +
-                "Specifically, they looked at how omega-3s derived from seafood- and plant-based foods influence the risk of death from heart attack, or myocardial infarction."));
+                "Specifically, they looked at how omega-3s derived from seafood- and plant-based foods influence the risk of death from heart attack, or myocardial infarction.", "http://cdn1.medicalnewstoday.com/content/images/articles/311/311239/omega-3-rich-foods.jpg"));
 
         newsList.add(new News("2", "Contaminated Gloves a No-No in Hospitals", "Health care workers who wear contaminated gloves can transfer bacteria onto hospital surfaces, a new study warns.\n" +
                 "\n" +
@@ -39,26 +39,22 @@ public class NewService {
                 "\n" +
                 "\"Proper glove use may decrease the risk of health care-associated infections and gloves should be carefully used and removed after use depending on the types of bacteria,\" she concluded.\n" +
                 "\n" +
-                "The study was presented recently at an ASM meeting in Boston. Research presented at meetings should be considered preliminary until published in a peer-reviewed medical journal."));
-        newsList.add(new News("3", "Diabetes Ups Risk of Heart Attack Death", "People with diabetes are much more likely to die after a heart attack than people without the blood sugar condition, a new study finds.\n" +
+                "The study was presented recently at an ASM meeting in Boston. Research presented at meetings should be considered preliminary until published in a peer-reviewed medical journal.", null));
+        newsList.add(new News("3", "Zika infection lingers longer in pregnancy, monkey study finds", "In the journal Nature Communications, researchers report how they are establishing rhesus macaque monkeys at the Wisconsin National Primate Research Center as a model for researching the progress of Zika virus infections in people.\n" +
                 "\n" +
-                "Researchers included 700,000 people in the study. All of them were hospitalized with a heart attack between January 2003 and June 2013. About 121,000 had diabetes.\n" +
+                "They note that what they have shown in the monkey model mirrors much of what has been observed in studies of humans.\n" +
                 "\n" +
-                "Compared to people who didn't have diabetes, those with the disease were 56 percent more likely to die if they had a heart attack caused by a completely blocked coronary artery. If their heart attack was the result of a partially blocked coronary artery, people with diabetes were 39 percent more likely to die, the study found.\n" +
+                "Study leader David O'Connor, a pathology professor at the University of Wisconsin-Madison, says:\n" +
                 "\n" +
-                "\"These results provide robust evidence that diabetes is a significant long-term population burden among patients who have had a heart attack,\" said lead researcher Dr. Chris Gale, a consultant cardiologist and associate professor in the School of Medicine at the University of Leeds in the United Kingdom.\n" +
+                "\"We have good news for most people: If you are not pregnant and not at risk of becoming pregnant, you probably don't need to be worried about Zika. But my concern for Zika virus in pregnancy is much higher now than it was 6 months ago.\"\n" +
                 "\n" +
-                "\"Although these days people are more likely than ever to survive a heart attack, we need to place greater focus on the long-term effects of diabetes in heart attack survivors,\" he added in a university news release.\n" +
+                "Zika virus spreads to people primarily via the bite of an infected Aedes mosquito - the same species that spreads dengue and chikungunya. The virus can also be passed on through sexual contact, and a pregnant woman can pass it to her fetus.\n" +
                 "\n" +
-                "An important step is to strengthen the partnership between primary care doctors, doctors who treat heart problems (cardiologists), and doctors who treat diabetes (endocrinologists), Gale said. He added that doctors need to make sure that high-risk patients are getting established medications as effectively as possible.\n" +
+                "In many people, Zika infection causes no symptoms, while others may suffer a mild illness for a few days, with raised temperature, rash, joint pain, or conjunctivitis (itchy or sore eyes).\n" +
                 "\n" +
-                "This study couldn't show a cause-and-effect relationship. So, researchers now want to figure out exactly why people with diabetes have a higher risk of death after a heart attack.\n" +
+                "Few people infected with Zika need to go to the hospital, and they very rarely die of it. For this reason, many people may not even realize they are, or have been, infected.\n" +
                 "\n" +
-                "\"We knew that following a heart attack, you are less likely to survive if you also have diabetes. However, we did not know if this observation was due to having diabetes or having other conditions which are commonly seen in people with diabetes,\" Dr. Mike Knapton said. He's an associate medical director at the British Heart Foundation, which funded the study.\n" +
-                "\n" +
-                "The findings highlight the need to find better ways to prevent heart disease in people with diabetes, he said. The study also shows the need to develop new treatments to improve survival after a heart attack for folks with diabetes, Knapton added.\n" +
-                "\n" +
-                "The study was published recently in the Journal of Epidemiology and Community Health."));
+                "However, if a woman is infected with Zika when she is pregnant, there is a chance her baby will be born with severe defects, including microcephaly, a condition where babies are born with smaller-than-normal heads and often have smaller brains that may not have developed properly.", "http://cdn1.medicalnewstoday.com/content/images/articles/311/311275/blood-fed-mosquito.jpg"));
 
         newsList.add(new News("4", "Drones Could Deliver Vaccines in Developing Countries", "Right now, people often associate the use of drones with warfare. But in the future they could serve humanitarian purposes, such as delivering aid to people in developing countries.\n" +
                 "\n" +
@@ -78,7 +74,7 @@ public class NewService {
                 "\n" +
                 "The study was published June 20 in the journal Vaccine.\n" +
                 "\n" +
-                "SOURCE: Johns Hopkins Bloomberg School of Public Health, news release, June 21, 2016"));
+                "SOURCE: Johns Hopkins Bloomberg School of Public Health, news release, June 21, 2016", null));
 
         newsList.add(new News("5", "Five New Genes Linked to Colon Cancer", "Scientists have identified five new gene mutations that may be tied to colon cancer.\n" +
                 "\n" +
@@ -94,7 +90,7 @@ public class NewService {
                 "\n" +
                 "\"This study represents an important contribution to our understanding of the genetics of bowel cancer. It provides a marker of the dramatic progress we have made so far in decoding the inherited risk of the disease, and gives us confidence that the most important risk genes have now been found,\" Paul Workman, chief executive of the Institute of Cancer Research, said.\n" +
                 "\n" +
-                "The study was published June 22 in the journal Nature Communications."));
+                "The study was published June 22 in the journal Nature Communications.", null));
 
         return newsList;
     }

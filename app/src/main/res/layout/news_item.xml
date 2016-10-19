@@ -12,18 +12,27 @@
     <android.support.constraint.LinearConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/default_2x_dimen">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/news_item_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_2x_dimen"
+            android:layout_marginTop="@dimen/default_2x_dimen"
             android:fontFamily="sans-serif-medium"
             android:maxLines="2"
-            android:textColor="#222"
-            android:textSize="24sp"
+            android:padding="@dimen/default_2x_dimen"
+            android:textColor="#333"
+            android:textSize="@dimen/font_title"
             tools:text="title one"/>
+
+        <ImageView
+            android:id="@+id/news_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#efefef"
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:id="@+id/news_item_description"
@@ -33,9 +42,10 @@
             android:fontFamily="sans-serif-light"
             android:lineSpacingMultiplier="1.15"
             android:maxLines="3"
+            android:padding="@dimen/default_2x_dimen"
             android:paddingTop="@dimen/default_dimen"
             android:textColor="#333"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_body"
 
             tools:text="some really long text for the news so that it goes on to next line atleast."/>
     </android.support.constraint.LinearConstraintLayout>

@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">NewsPro</string>
+    <string name="app_name">Health Kit</string>
+    <string name="vendor_name">Company Name Here</string>
+
 </resources>

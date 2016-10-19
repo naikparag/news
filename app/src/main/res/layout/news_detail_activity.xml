@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/default_2x_dimen"
         android:orientation="vertical">
 
         <TextView
@@ -18,21 +17,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/default_2x_dimen"
             android:textColor="#222"
-            android:textSize="24sp"
+            android:textSize="@dimen/font_title"
             tools:text="title one"/>
+
+        <ImageView
+            android:id="@+id/news_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#efefef"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/news_detail_description"
-            android:layout_marginTop="@dimen/default_dimen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_dimen"
             android:ellipsize="end"
             android:fontFamily="sans-serif-light"
             android:lineSpacingMultiplier="1.4"
+            android:padding="@dimen/default_2x_dimen"
             android:paddingTop="@dimen/default_dimen"
-            android:textSize="16sp"
             android:textColor="#333"
+            android:textSize="@dimen/font_body"
 
             tools:text="some really long text for the news so that it goes on to next line atleast."/>
     </LinearLayout>

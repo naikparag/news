@@ -8,14 +8,51 @@ import android.os.Parcelable;
  */
 
 public class News implements Parcelable {
+    public static final Creator<News> CREATOR = new Creator<News>() {
+        @Override
+        public News createFromParcel(Parcel source) {
+            return new News(source);
+        }
+
+        @Override
+        public News[] newArray(int size) {
+            return new News[size];
+        }
+    };
+
     private String id;
     private String title;
+
+    @SerializedName("text")
     private String description;
 
-    public News(String id, String title, String description) {
+    @SerializedName("img_url")
+    private String imageUrl;
+
+    public News() {
+        // empty
+    }
+
+    public News(String id, String title, String description, String imageUrl) {
         this.id = id;
         this.title = title;
         this.description = description;
+        this.imageUrl = imageUrl;
+    }
+
+    protected News(Parcel in) {
+        this.id = in.readString();
+        this.title = in.readString();
+        this.description = in.readString();
+        this.imageUrl = in.readString();
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getId() {
@@ -52,23 +89,6 @@ public class News implements Parcelable {
         dest.writeString(this.id);
         dest.writeString(this.title);
         dest.writeString(this.description);
+        dest.writeString(this.imageUrl);
     }
-
-    protected News(Parcel in) {
-        this.id = in.readString();
-        this.title = in.readString();
-        this.description = in.readString();
-    }
-
-    public static final Parcelable.Creator<News> CREATOR = new Parcelable.Creator<News>() {
-        @Override
-        public News createFromParcel(Parcel source) {
-            return new News(source);
-        }
-
-        @Override
-        public News[] newArray(int size) {
-            return new News[size];
-        }
-    };
 }

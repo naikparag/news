@@ -7,4 +7,7 @@
     <dimen name="default_dimen">8dp</dimen>
     <dimen name="default_2x_dimen">16dp</dimen>
     <dimen name="default_4x_dimen">32dp</dimen>
+
+    <dimen name="font_title">20sp</dimen>
+    <dimen name="font_body">15sp</dimen>
 </resources>
